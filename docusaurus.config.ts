@@ -68,7 +68,7 @@ const config: Config = {
       title: "Bryce McWhirter ",
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.svg",
+        src: "https://avatars.githubusercontent.com/u/45834798?s=400&u=37899831ff85ae686009d4ebb63a158726a30c33&v=4",
       },
       items: [
         { to: "/blog", label: "Blog", position: "left" },

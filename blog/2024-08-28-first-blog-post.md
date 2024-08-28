@@ -1,8 +1,8 @@
 ---
 slug: first-blog-post
-title: First Blog Post
+title: History of the Catholic Church
 authors: [mcwhirter]
-tags: [hola, docusaurus]
+tags: [hola, docusaurus, christianity]
 ---
 
 The Catholic Church, also known as the Roman Catholic Church, is the largest Christian church, with over 1.3 billion members worldwide. It traces its origins back to the time of Jesus Christ and the Apostles.

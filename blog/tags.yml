@@ -17,3 +17,8 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+christianity:
+  label: Christianity
+  permalink: /christianity
+  description: Christianity tag description
