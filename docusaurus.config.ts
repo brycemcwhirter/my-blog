@@ -4,8 +4,6 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Bryce's Blog",
-  tagline: "Subscribe for Updates",
-  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
   url: "https://blog.brycemcwhirter.com",
@@ -64,7 +62,8 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image:
+      "https://avatars.githubusercontent.com/u/45834798?s=400&u=37899831ff85ae686009d4ebb63a158726a30c33&v=4",
     navbar: {
       title: "Bryce McWhirter ",
       logo: {
@@ -73,9 +72,15 @@ const config: Config = {
       },
       items: [
         { to: "/blog", label: "Blog", position: "left" },
+        { to: "/blog/tags", label: "Tags", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/brycemcwhirter",
           label: "GitHub",
+          position: "right",
+        },
+        {
+          href: "https://brycemcwhirter.com",
+          label: "BryceMcWhirter.com",
           position: "right",
         },
       ],
