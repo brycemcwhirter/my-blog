@@ -27,18 +27,27 @@ const config: Config = {
     locales: ["en"],
   },
 
+  plugins: [
+    async function myPlugin() {
+      return {
+        name: "docusaurus-tailwindcss",
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
+          return postcssOptions;
+        },
+      };
+    },
+  ],
+
   presets: [
     [
       "classic",
       {
-        docs: {
-          sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
+        docs: false,
         blog: {
+          routeBasePath: "/",
           showReadingTime: true,
           feedOptions: {
             type: ["rss", "atom"],
@@ -71,12 +80,12 @@ const config: Config = {
         src: "https://avatars.githubusercontent.com/u/45834798?s=400&u=37899831ff85ae686009d4ebb63a158726a30c33&v=4",
       },
       items: [
-        { to: "/blog", label: "Blog", position: "left" },
-        { to: "/blog/tags", label: "Tags", position: "left" },
+        { to: "/tags", label: "Tags", position: "left" },
         {
           href: "https://github.com/brycemcwhirter",
-          label: "GitHub",
+          className: "header-github-link",
           position: "right",
+          "aria-label": "GitHub repository",
         },
         {
           href: "https://brycemcwhirter.com",
