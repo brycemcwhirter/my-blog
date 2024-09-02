@@ -21,7 +21,7 @@ jobs:
           set +a
 
       - name: Use environment variables
-        run: echo $MY_VARIABLE
+        run: echo $GIT_USER
 
       - name: Set up Node.js 20
         uses: actions/setup-node@v3
