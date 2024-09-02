@@ -6,10 +6,10 @@ const config: Config = {
   title: "Bryce's Blog",
 
   // Set the production url of your site here
-  url: "https://brycemcwhirter.github.io",
+  url: "https://blog.brycemcwhirter.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/my-blog",
+  baseUrl: "/",
   trailingSlash: false,
 
   // GitHub pages deployment config.
