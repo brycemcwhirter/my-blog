@@ -6,7 +6,7 @@ const config: Config = {
   title: "Bryce's Blog",
   url: "https://blog.brycemcwhirter.com",
   baseUrl: "/",
-  favicon: 'static/img/BryceMcWhirter.png',
+  favicon: 'img/favicon.ico',
 
 
   organizationName: "brycemcwhirter", // Usually your GitHub org/user name.
