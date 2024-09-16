@@ -74,6 +74,7 @@ const config: Config = {
       },
       items: [
         { to: "/tags", label: "Tags", position: "left" },
+        {to: "/subscribe", label: "Subscribe", position: "left" },
         {
           href: "https://github.com/brycemcwhirter",
           className: "header-github-link",
